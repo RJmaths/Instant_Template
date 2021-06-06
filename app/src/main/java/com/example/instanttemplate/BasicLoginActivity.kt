@@ -14,6 +14,10 @@ class BasicLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_basic_login)
 
+        val data: String? = intent?.data.toString()
+
+        findViewById<TextView>(R.id.textView3).text = data
+
         val submitLogin: Button = findViewById(R.id.loginButton)
         submitLogin.setOnClickListener{
             if (findViewById<EditText>(R.id.loginPin).text.toString() == "1234"){
