@@ -14,7 +14,7 @@ class BasicLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_basic_login)
 
-        val data: String? = intent?.data.toString()
+        val data: String = intent?.data.toString()
 
         findViewById<TextView>(R.id.textView3).text = data
 
