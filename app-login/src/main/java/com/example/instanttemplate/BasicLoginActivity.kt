@@ -16,7 +16,7 @@ class BasicLoginActivity : AppCompatActivity() {
 
         val data: String = intent?.data.toString()
 
-        findViewById<TextView>(R.id.textView3).text = data
+        findViewById<TextView>(R.id.textView2).text = "Url used - $data"
 
         val submitLogin: Button = findViewById(R.id.loginButton)
         submitLogin.setOnClickListener{
